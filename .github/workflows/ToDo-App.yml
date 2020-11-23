@@ -38,12 +38,12 @@ jobs:
 
       
       - name: Create Build
-        uses: yarn build
+        run: yarn build
         
         
       - name: Installing Surge
-        uses: npm install -g surge
+        run: npm install -g surge
       
       
       - name: Deploying On Surge
-        uses: surge ./build http://todo-app-react-based-app-by-sameer-shaikh.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build http://todo-app-react-based-app-by-sameer-shaikh.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
