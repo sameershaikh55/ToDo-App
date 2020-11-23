@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #355b7def;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fullPage {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.box {
+  text-align: center;
+  background-color: snow;
+  min-height: 52vh;
+  min-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  padding-bottom: 50px;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-size: 38px;
+  margin: 22px auto;
+  background-color: #ff4242;
+  min-height: 50px;
+  color: snow;
+  box-shadow: 1px 5px 15px rgba(0,0,0,0.4);
+}
+
+input {
+  text-align: center;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #ff4242;
+  font-size: 15px;
+  text-transform: capitalize;
+  background: transparent;
+  height: 28px;
+  margin-top: 17px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+::placeholder {
+  font-size: x-large;
+  font-weight: inherit;
+}
+
+ul li {
+  list-style-type: none;
+  text-transform: capitalize;
+  color: #ff4242;
+  font-weight: bold;
+}
+
+.addbutton {
+  background-color: #ff4242;
+  border-color: transparent;
+  font-size: 7px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.4);
+  margin-left: 12px;
+}
+
+.addbutton:hover {
+  background-color: #07b35a;
+  box-shadow: 2px 5px 15px rgba(0,0,0,0.6);
+}
+
+.icon {
+  font-size: xx-large;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputfield {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-top: 27px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list {
+  display: flex;
+  flex-direction: row;
+  font-size: x-large;
+  margin: -8px 50px;
+}
+
+.pDeletebtn {
+  border-color: transparent;
+  background-color: snow;
+  border-radius: 50%;
+  padding: 1px 5px;
+  font-size: 7px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-right: 14px;
+  margin-top: 2px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.pDeletebtn .deleteBtn {
+  font-size: medium;
+}
+
+.pDeletebtn:hover {
+  color: #ff4242;
+  background-color: #ff42420c;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+ul {
+  margin-top: 20px;
 }
